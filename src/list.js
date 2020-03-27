@@ -11,6 +11,10 @@ class List{
 
   get isEmpty(){ return this.head === null; }
 
+  node(val, prev, next){
+    return new ListNode(this, val, prev, next);
+  }
+
   slice(){
     const list = new List();
 
