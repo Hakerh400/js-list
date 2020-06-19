@@ -1,7 +1,7 @@
 {
   "name": "@hakerh400/list",
   "description": "Double-linked list implementation in JavaScript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Thomas <hakerh403@gmail.com>",
   "main": "index.js",
   "contributors": [],
@@ -15,13 +15,13 @@
     "test": "node test"
   },
   "dependencies": {
-    "omikron": "~1.2.5"
+    "omikron": "~1.2.32"
   },
   "devDependencies": {
     "@hakerh400/jstest": "~1.1.2"
   },
   "engines": {
-    "node": ">=13"
+    "node": ">=14"
   },
   "license": "Unlicense"
 }

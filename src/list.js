@@ -3,7 +3,6 @@
 const fs = require('fs');
 const path = require('path');
 const O = require('omikron');
-const ListNode = require('./list-node');
 
 class List{
   head = null;
@@ -86,6 +85,12 @@ class List{
   }
 }
 
-module.exports = Object.assign(List, {
+module.exports = List;
+
+const ListNode = require('./list-node');
+const ArrayList = require('./array-list');
+
+Object.assign(List, {
   ListNode,
+  ArrayList,
 });
