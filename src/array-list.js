@@ -19,6 +19,15 @@ class ArrayList extends List{
   push(elem){ super.push(new ListNode(this, elem)); }
   shift(){ return super.shift().val; }
   pop(){ return super.pop().val; }
+
+  *[Symbol.iterator](){
+    let node = this.head;
+
+    while(node !== null){
+      yield node.val;
+      node = node.next;
+    }
+  }
 }
 
 module.exports = ArrayList;
