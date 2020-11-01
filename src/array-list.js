@@ -20,23 +20,23 @@ class ArrayList extends List{
   get len(){ return this.length; }
 
   unshift(elem){
-    super.unshift(new ListNode(this, elem));
     this.length++;
+    super.unshift(new ListNode(this, elem));
   }
 
   push(elem){
-    super.push(new ListNode(this, elem));
     this.length++;
+    super.push(new ListNode(this, elem));
   }
 
   shift(){
-    return super.shift().val;
     this.length--;
+    return super.shift().val;
   }
 
   pop(){
-    return super.pop().val;
     this.length--;
+    return super.pop().val;
   }
 
   *[Symbol.iterator](){
