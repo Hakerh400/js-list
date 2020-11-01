@@ -7,6 +7,8 @@ const List = require('./list');
 const ListNode = require('./list-node');
 
 class ArrayList extends List{
+  length = 0;
+
   constructor(arr=null){
     super();
 
@@ -15,10 +17,27 @@ class ArrayList extends List{
         this.push(elem);
   }
 
-  unshift(elem){ super.unshift(new ListNode(this, elem)); }
-  push(elem){ super.push(new ListNode(this, elem)); }
-  shift(){ return super.shift().val; }
-  pop(){ return super.pop().val; }
+  get len(){ return this.length; }
+
+  unshift(elem){
+    super.unshift(new ListNode(this, elem));
+    this.length++;
+  }
+
+  push(elem){
+    super.push(new ListNode(this, elem));
+    this.length++;
+  }
+
+  shift(){
+    return super.shift().val;
+    this.length--;
+  }
+
+  pop(){
+    return super.pop().val;
+    this.length--;
+  }
 
   *[Symbol.iterator](){
     let node = this.head;

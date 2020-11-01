@@ -1,7 +1,7 @@
 {
   "name": "@hakerh400/list",
   "description": "Double-linked list implementation in JavaScript",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Thomas <hakerh403@gmail.com>",
   "main": "index.js",
   "contributors": [],
